@@ -1,5 +1,5 @@
 import './App.css';
-const tg = window.Telegram.WepApp;
+const tg = window.Telegram;
 
 function App() {
     const onClose = () => {
@@ -8,7 +8,7 @@ function App() {
 
     return (
         <div className="App">
-          <button>Закрыть</button>
+          <button onClick={onClose}>Закрыть</button>
         </div>
     );
 }
